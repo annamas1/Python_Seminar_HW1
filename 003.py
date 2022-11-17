@@ -14,9 +14,12 @@
 
 
 # 2 вариант решения:
-# a = int(input())
-# range(*(1,5,2))
 
 N = int(input("Введите размер списка: "))
 spam = list(range(-N, N+1))
 print(spam)
+
+
+# a = int(input())
+# range(*(1,5,2))
+
