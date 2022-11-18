@@ -26,16 +26,4 @@ i='Привет, как дела?!'
 d='Тимур - лучший математик на свете!!'
 text = i.split()
 cost = (len(text))
-print(text)
-
-sumrub = cost*60//100
-sumkop = cost*60%100
-print (f'{sumrub} руб. {sumkop} коп.')
-
-# text = 'Привет, как дела?!'
-# print(len(text))
-# rub = len(text)*60//100
-# print(rub)
-# kop = len(text)*60 - rub*100
-# print(kop)
-# print(f'{rub} р. {kop} коп.')
+print(cost)
