@@ -5,9 +5,9 @@
 
 cheslo = int(input("Введите число: "))
 sum = 0
+
 while cheslo > 0:
     sum = sum + cheslo % 10
     cheslo = cheslo // 10
 print(f'Сумма цифр = {sum}')
 
-#доделать с дробью
