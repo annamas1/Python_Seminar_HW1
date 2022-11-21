@@ -12,6 +12,11 @@ for i in range(N):
 print(f"Произведение чисел от 1 до {a} равно: ", (num))
 
 
+
+
+
+
+
 # n = int(input())
 # f = 1
 # while n>1:
