@@ -3,9 +3,9 @@
 # a = int(input())
 # range(*(1,5,2))
 
-N = int(input("Введите размер списка: "))
-spam = list(range(-N, N+1))
-print(spam)
+# N = int(input("Введите размер списка: "))
+# spam = list(range(-N, N+1))
+# print(spam)
 
 
 # 2. Напишите программу, которая будет принимать на вход дробь и показывать первую цифру дробной части числа.
@@ -19,4 +19,11 @@ print(spam)
 # print(spam)
 
 #round(float_number, number_of_decimals)
+
+
+for x in range(2):
+        for y in range(2):
+            for z in range(2):
+                print(not (x or y or z) == (not x and not y and not z))
+
 
