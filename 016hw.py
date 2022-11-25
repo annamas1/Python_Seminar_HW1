@@ -6,6 +6,18 @@ num = [round((1+1/i)**i, 3) for i in range(1, N+1)]
 print(f'Последовательность: {num}\n Сумма: {round(sum(num), 2)}')
 
 
+# n = int(input())
+# summ = 0
+# for i in range(1, n + 1):
+#     summ += (1 + 1 / i) ** i
+# print(summ)
+
+
+
+# n = int(input('Введите число: ')) 
+# def sequence(n):
+#     return[round((1 + 1 / x)**x, 3) for x in range (1, n + 1)]
+
 
 
 # N = int(input('Введите число:'))
