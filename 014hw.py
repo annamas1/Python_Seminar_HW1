@@ -36,11 +36,32 @@
 # ===============================================
 # 3-й вариант решения универсальный работает со всеми:
 
+
 n = input(("Введите число: "))
 sum = 0
  
-for digit in n:
-    if digit.isdigit():
-        sum += int(digit)
+for i in n:
+    if i.isdigit():
+        sum += int(i)
         
 print("Сумма:", sum)
+
+
+
+# n = float(input('Введите число - '))
+# while n % 1 > 0:
+#     n *= 10
+# summ = 0
+# while n > 0:
+#     summ += n % 10
+#     n //= 10
+# print(int(summ))
+
+
+
+# s = '0.56'
+# summ = 0
+# for i in s:
+#     if i.isdigit():
+#         summ += int(i)
+# print(summ)
