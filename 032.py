@@ -4,11 +4,11 @@
 
 
 # решение 1
-list1 = list(input())
-if '3' in list1:
-    print(True)
-else:
-    print(False)
+# list1 = list(input())
+# if '3' in list1:
+#     print(True)
+# else:
+#     print(False)
 
 
 # Решение 2 - более универсальное
