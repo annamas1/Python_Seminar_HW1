@@ -29,3 +29,12 @@ pi_target = 0
 for i in range(1, 1000000):
     pi_target += 4 * ((-1) ** (i + 1)) / (2 * i - 1)
 print(str(pi_target)[:a + 2])
+
+
+
+number = float(input())
+d = list('0.001')
+d.reverse()
+h = d.index('.')
+print(h)
+print(round(number, h))
