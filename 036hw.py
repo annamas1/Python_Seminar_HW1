@@ -14,6 +14,8 @@ for i in posl1:
 print(f'Cписок неповторяющихся элементов исходной последовательности: {posl2}')
 
 
+
+
 # import random
 
 # b = int(input('Введите количество элементов последовательности: '))
@@ -33,12 +35,16 @@ print(f'Cписок неповторяющихся элементов исход
 # print(f'Cписок неповторяющихся элементов исходной последовательности: {posl2}')
 
 
+
+
 # for i in range(len(a)):
 #     for j in range(len(a)):
 #         if a[i] == a[j] and i != j:
 #             break
 #         else:
 #             print(a[i])
+
+
 
 
 
@@ -66,6 +72,8 @@ print(f'Cписок неповторяющихся элементов исход
 
 
 
+
+
 # def elements(nums):
 #     nums = [int(i) for i in nums.split()]
 #     return list(set(nums))
@@ -73,6 +81,10 @@ print(f'Cписок неповторяющихся элементов исход
 # nums = '1 2 2 3 455 66 66 2 1'
 # print(elements(nums))
 
+
+
+# a= [1,2,2,2,2,3,1,4]
+# print(set(a))
 
 
 
@@ -85,3 +97,14 @@ print(f'Cписок неповторяющихся элементов исход
 #          break
 #    if flag:
 #       print(a[i])
+
+
+
+
+# b = [1, 1, 2, 3, 3, 4, 5]
+# a = []
+# for i in b:
+#         if b.count(i) == 1:
+#                 a.append(i)
+
+# print(a)
