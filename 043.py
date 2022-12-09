@@ -1,77 +1,22 @@
-# вариант человек против бота c "интеллектом":
-# from random import randint
+# 2. на входе a = [4, 3, -10, 1, 7, 12], получить на выходе из этого списка  а=[4, -10, 12, 3, 1, 7]
 
-# def input_dat(name):
-#     x = int(input(f"{name}, введите количество конфет, которое возьмете от 1 до 28: "))
-#     while x < 1 or x > 28:
-#         x = int(input(f"{name}, введите корректное количество конфет: "))
-#     return x
+a = [4, 3, -10, 1, 7, 12]
+print(a.insert(1, -10))  # добавление в указанный элемент
+print(a.insert(2, 12)) 
+print(a.insert(3, 3)) 
+print(a.insert(5, 7))
+print(a)
+
+# простое решение
+a = [4, 3, -10, 1, 7, 12]
+a.sort(key=lambda x: x%2)
+print(a)
 
 
-# def p_print(name, k, counter, value):
-#     print(f"Ходил {name}, он взял {k}, теперь у него {counter}. Осталось на столе {value} конфет.")
-
-
-# def bot_calc(value):
-#     k = randint(1,29)
-#     while value-k <= 28 and value > 29:
-#         k = randint(1,29)
-#     return k
-
-# player1 = input("Введите имя первого игрока: ")
-# player2 = "Bot"
-# value = int(input("Введите количество конфет на столе: "))
-# flag = randint(0,2) # флаг очередности
-# if flag:
-#     print(f"Первый ходит {player1}")
-# else:
-#     print(f"Первый ходит {player2}")
-
-# counter1 = 0 
-# counter2 = 0
-
-# while value > 28:
-#     if flag:
-#         k = input_dat(player1)
-#         counter1 += k
-#         value -= k
-#         flag = False
-#         p_print(player1, k, counter1, value)
-#     else:
-#         k = bot_calc(value)
-#         counter2 += k
-#         value -= k
-#         flag = True
-#         p_print(player2, k, counter2, value)
-
-# if flag:
-#     print(f"Выиграл {player1}")
-# else:
-#     print(f"Выиграл {player2}")
+# print(list1.append(11))  # добавление в конец
+# print(list1)
 
 
 
 
-def coding(txt):
-     count = 1
-     res = ''
-     for i in range(len(txt)-1):
-         if txt[i] == txt[i+1]:
-             count += 1
-         else:
-             res = res + str(count) + txt[i]
-             count = 1
-     if count > 1 or (txt[len(txt)-2] != txt[-1]):
-         res = res + str(count) + txt[-1]
-     return res
 
- def decoding(txt):
-     num = ''
-     res = ''
-     for i in range(len(txt)):
-         if not txt[i].isalpha():
-             num += txt[i]
-         else:
-             res = res + txt[i] * int(num)
-             num = ''
-     return res
